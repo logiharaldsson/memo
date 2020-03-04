@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 // import './App.css';
-import CardList from './CardList';
-import { robots } from './robots';
-import SearchBox from './SearchBox';
-import Scroll from './Scroll';
+import CardList from '../components/CardList';
+// THis one is to import from a js file, objects such as a list of robots.
+// import { robots } from '../components/robots';
+import SearchBox from '../components/SearchBox';
+import Scroll from '../components/Scroll';
 import './App.css';
 
 
@@ -20,17 +21,17 @@ class App extends Component{
     componentDidMount() {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
-            .then(users => this.setState({robots: robots }));
+            .then(users => this.setState({robots: users }));
     }
 
     onSearchChange = (event) => {
         this.setState({ searchfield: event.target.value })
-
     }
 
     render() {
-        const filteredRobots = this.state.robots.filter(robot => {
-            return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
+        const { robots, searchfield } = this.state;
+        const filteredRobots = robots.filter(robot => {
+            return robot.name.toLowerCase().includes(searchfield.toLowerCase())
         })
         return (
             <div className="tc ">
@@ -42,7 +43,6 @@ class App extends Component{
             </div>
         );
     }
-
 }
 
 export default App;
