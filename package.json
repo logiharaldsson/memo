@@ -1,5 +1,6 @@
 {
   "name": "memo",
+  "homepage": "https://logiharaldsson.github.io/memo/"
   "version": "0.1.0",
   "private": true,
   "dependencies": {
