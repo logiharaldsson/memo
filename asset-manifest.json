@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/memo/static/css/main.9e9ebfce.chunk.css",
+    "main.js": "/memo/static/js/main.538c14ee.chunk.js",
+    "main.js.map": "/memo/static/js/main.538c14ee.chunk.js.map",
+    "runtime-main.js": "/memo/static/js/runtime-main.a3041411.js",
+    "runtime-main.js.map": "/memo/static/js/runtime-main.a3041411.js.map",
+    "static/css/2.eb45ad44.chunk.css": "/memo/static/css/2.eb45ad44.chunk.css",
+    "static/js/2.6cfa96fa.chunk.js": "/memo/static/js/2.6cfa96fa.chunk.js",
+    "static/js/2.6cfa96fa.chunk.js.map": "/memo/static/js/2.6cfa96fa.chunk.js.map",
+    "index.html": "/memo/index.html",
+    "precache-manifest.950aa1ab5a84489dd1f35ce5bb2a1b5f.js": "/memo/precache-manifest.950aa1ab5a84489dd1f35ce5bb2a1b5f.js",
+    "service-worker.js": "/memo/service-worker.js",
+    "static/css/2.eb45ad44.chunk.css.map": "/memo/static/css/2.eb45ad44.chunk.css.map",
+    "static/css/main.9e9ebfce.chunk.css.map": "/memo/static/css/main.9e9ebfce.chunk.css.map",
+    "static/js/2.6cfa96fa.chunk.js.LICENSE.txt": "/memo/static/js/2.6cfa96fa.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/memo/static/media/SEGA.12a3db8b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3041411.js",
+    "static/css/2.eb45ad44.chunk.css",
+    "static/js/2.6cfa96fa.chunk.js",
+    "static/css/main.9e9ebfce.chunk.css",
+    "static/js/main.538c14ee.chunk.js"
+  ]
+}
