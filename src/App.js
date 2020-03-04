@@ -1,20 +1,40 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import './App.css';
 import CardList from './CardList';
 import { robots } from './robots';
 import SearchBox from './SearchBox'
+import './App.css'
 
-// Just importet infof !!!
 
-function App() {
-    return (
-        <div className="tc ">
-            <h1>Welcome to RoboFriends </h1>
-            <SearchBox />
-            <CardList robots={robots} number={1}/>
-            <CardList robots={robots} number={2}/>
-        </div>
-    );
+
+class App extends Component{
+    constructor() {
+        super()
+        this.state = {
+            robots: robots,
+            searchfield: ''
+        }
+    }
+
+    onSearchChange = (event) => {
+        this.setState({ searchfield: event.target.value })
+
+    }
+
+    render() {
+        const filteredRobots = this.state.robots.filter(robot => {
+            return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
+        })
+        console.log(filteredRobots)
+        return (
+            <div className="tc ">
+                <h1 className='f1'>Welcome to RoboFriends </h1>
+                <SearchBox searchChange={this.onSearchChange} />
+                <CardList robots={filteredRobots}/>
+            </div>
+        );
+    }
+
 }
 
 export default App;
